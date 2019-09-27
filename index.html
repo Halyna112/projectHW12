@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="inner__text" id="text">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <button type="button" class="edit" onclick="btnEdit()">edit</button>
+    <button type="button" class="style" onclick="btnStyle()">style</button>
+    <div class="inner__content">
+      <div class="inner__text_content">
+        <textarea class="area"></textarea>
+        <button type="button" class="save" onclick="btnSave()">Save</button>
+        <button type="button" class="add" onclick="btnAdd()">Add</button>
+
+      </div>
+      <!-- add styles -->
+      <div class="colors__style">
+        <div class="parts__item" style="background-color: red"></div>
+        <div class="parts__item" style="background-color: blue"></div>
+        <div class="parts__item" style="background-color: green"></div>
+        <div class="parts__item" style="background-color: pink"></div>
+        <div class="parts__item" style="background-color:orange"></div>
+        <div class="parts__item" style="background-color: violet"></div>
+        <div class="parts__item" style="background-color: aqua"></div>
+        <div class="parts__item" style="background-color: yellowgreen"></div>
+        <div class="parts__item" style="background-color: purple"></div>
+      </div>
+
+      <div class="inner__content_style">
+        <h3>Font Size:</h3>
+        <ul class="fontSize__style">
+          <li class="fontSize__item"><input type="radio" onclick="checkSize()" name="editFontSize" value="12px">12px
+          </li>
+          <li class="fontSize__item"><input type="radio" onclick="checkSize()" name="editFontSize" value="14px">14px
+          </li>
+          <li class="fontSize__item"><input type="radio" onclick="checkSize()" name="editFontSize" value="16px">16px
+          </li>
+          <li class="fontSize__item"><input type="radio" onclick="checkSize()" name="editFontSize" value="18px">18px
+          </li>
+          <li class="fontSize__item"><input type="radio" onclick="checkSize()" name="editFontSize" value="20px">20px
+          </li>
+        </ul>
+        <h3>Font Family</h3>
+        <select name="fontFam__style" id="familyF">
+          <option class="fontFam__item">choose option...</option>
+          <option class="fontFam__item" value="cursive">cursive</option>
+          <option class="fontFam__item" value="fantasy">fantasy</option>
+          <option class="fontFam__item" value="monospace">monospace</option>
+          <option class="fontFam__item" value="sans-serif">sans-serif</option>
+        </select>
+        <h3>Colors:</h3>
+        <input type="button" class="chText" onclick="btnTextcol()" value="Color of text">
+        <input type="button" class="chBackg" onclick="btnBgcol()" value="Background color">
+        <h3>Style</h3>
+        <label for="fontSt"><input type="checkbox" value="bold" id="fontB">Bold text</label>
+        <label for="fontSt"><input type="checkbox" value="cursive" id="fontC">Cursive text</label>
+      </div>
+    </div>
+  </div>
+  <!-- choose table or list form-->
+  <div class="outer__tables">
+    <div class="choose">
+      <h3>Choose what you want</h3>
+      <label for="tabChoose"><input type="radio" name="choose" value="table" class="tabChoose">table</label>
+      <label for="listChoose"> <input type="radio" name="choose" value="list" class="listChoose">list</label>
+    </div>
+    <!-- create table form -->
+    <div class="table__form">
+      <form name="tableForm">
+        <h2>Choose what you want</h2>
+        <li class="table__item"><label for="">Count TR <input type="text" autofocus placeholder="Count TR"
+              name="countTr" value=""></label></li>
+        <li class="table__item"><label for="">Count TD <input type="text" placeholder="Count TD" name="countTd"
+              value=""></label></li>
+        <h3>Add style to your table</h3>
+        <li class="table__item"><label for="">Width of TD <input type="text" placeholder="Width of TD" name="widthTd"
+              value=""></label></li>
+        <li class="table__item"><label for="">Height of TD <input type="text" placeholder="Height of TD" name="heightTd"
+              value=""></label></li>
+        <li class="table__item"><label for="">Width of border <input type="text" placeholder="width..."
+              name="widthBorder" value=""></label></li>
+        <label for="border-style">Type of border</label>
+        <select name="" id="border-style">
+          <option class="table__item" value="solid">solid</option>
+          <option class="table__item" value="dotted">dotted</option>
+          <option class="table__item" value="dashed">dashed</option>
+          <option class="table__item" value="double">double</option>
+        </select>
+        <label for="border-color">Color of border</label>
+        <select name="" id="border-color">
+          <option class="table__item" value="red">red</option>
+          <option class="table__item" value="black">black</option>
+          <option class="table__item" value="blue">blue</option>
+          <option class="table__item" value="green">green</option>
+        </select>
+        <input type="button" class="create" value="Create table">
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

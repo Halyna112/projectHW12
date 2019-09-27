@@ -1,0 +1,162 @@
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.inner__text {
+  padding: 20px 0 20px 20px;
+  background: #c1c1c1;
+}
+
+.inner__text_content {
+  display: none;
+  height: 250px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.area {
+  margin: 0px;
+  width: 500px;
+  height: 245px;
+  resize: none;
+  border-radius: 10px;
+}
+
+.inner__content {
+  height: 400px;
+  padding: 20px 20px 20px 20px;
+  background: #c1c1c1;
+
+}
+
+/* buttons */
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+}
+
+.edit {
+  background: yellow;
+  margin-left: 300px;
+}
+
+.style {
+  background: lightskyblue;
+  margin-left: 0;
+}
+
+.save {
+  background: green;
+  color: white;
+  margin-left: 200px;
+
+}
+
+.add {
+  background: red;
+  color: white;
+  margin-left: 0;
+}
+
+.create {
+  background: green;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#createList {
+  margin: 20 px;
+  padding: 5px;
+}
+
+.chText,
+.chBackg {
+  background: lightgreen;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* add styles */
+
+.inner__content_style {
+  display: none;
+}
+
+.fontSize__style {
+  display: flex;
+  padding-left: 0px;
+}
+
+.colors__style {
+  width: 200px;
+  height: 150px;
+  padding: 0;
+  float: right;
+  margin-top: 100px;
+  display: none;
+}
+
+/* parts of color */
+
+.parts__item {
+  border: 1px solid white;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+#familyF {
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+
+.fontSize__item,
+.table__item {
+  list-style: none;
+  margin-right: 10px;
+}
+
+/* create list or table */
+
+.choose {
+  display: none;
+  margin: 0px auto;
+  width: 595px;
+  height: 250px;
+  padding: 20px 0 20px 20px;
+  background: #c1c1c1;
+  border: 1px solid black;
+}
+
+.choose__item {
+  list-style: none;
+  display: inline;
+}
+
+.table__form {
+  display: none;
+  margin: 0px auto;
+  width: 595px;
+  height: 400px;
+  padding: 20px 0 20px 20px;
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  padding: 5px 350px 0 5px;
+}
+
+.table__item {
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
